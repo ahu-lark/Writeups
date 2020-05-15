@@ -1,0 +1,9 @@
+https://www.vulnhub.com/entry/stripes-1,468/
+下载虚拟机然后导入
+
+确定IP之后拿 namp 扫描常规端口
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+发现开启ssh,http， 直接浏览器访问发现是个wordpress网站，页面比较混乱发现网站有些资源链接是stripe，没法解析，所以直接修改本地hosts，让页面看起来完整
